@@ -132,8 +132,8 @@ class automata { //Definimos una clase automata...
             for (int i = 0; i<size; i++){
                 state[i] = false; //Inicializamos todas las posiciones del arreglo.
             }
-            bool user_state[is.size()-1]; //Definimos un arreglo del tamaño del string del usuario.
-            int user_state_width = is.size()-1; //El string nos llega con un caracter de más.
+            bool user_state[is.size()]; //Definimos un arreglo del tamaño del string del usuario.
+            int user_state_width = is.size();
             for (int i = 0; i<user_state_width; i++){
                 if (is[i] == '1'){ //Si el usuario mandó 1 asignamos true a la posición...
                     user_state[i] = true;
